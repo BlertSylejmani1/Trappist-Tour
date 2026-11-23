@@ -68,9 +68,10 @@ referimi), dhe kjo tregoi drejtimin për fazën tjetër: të shfrytëzohet struk
 | + dritare kohore të imta, planeti b i pari | 5.783M |
 | Bashkimi i 7 run-eve + polish lokal | 5.792M |
 
-**Zbulim:** fronti nis gjithmonë me b → c. Kjo është shpjegimi fizik i kapjes, jo rastësi.
+**Zbulim:** fronti nis pothuajse gjithmonë me b → c (në dorëzimin final: 99 nga 100 tura; njëra b → f).
+Kjo ka shpjegim fizik (b jep kapjen më të fortë), nuk është rastësi.
 
-**Kthime në rënie:** një run 2-orësh shtesë (4 run në 4 bërthama) dha vetëm **+749**
+**Kthime në rënie:** një run shtesë 2-orësh (4 kërkime, në kompjuter me 4 bërthama) dha vetëm **+749**
 (5,791,586 → 5,792,335). Përfundim: më shumë kohë llogaritjeje nuk mjafton; duhet algoritëm më i mirë.
 
 ## Faza 2 – Heuristika si A\* (5.812M → 5.815M)
@@ -79,7 +80,8 @@ tani), jo me atë që do të ndodhte. Një gjendje me orbitë të "kapur" mirë 
 më pas, por beam-i nuk e dinte.
 
 **Ideja:** pas çdo planeti llogaritet P_min, periudha më e shkurtër që mund të japë fly-by-i. Mbi
-turat tona, koha e mbetur e turës parashikohet nga P_min me korrelacion **0.88–0.97**. Beam-i
+turat tona, koha e mbetur e turës parashikohet nga P_min me korrelacion **0.88–0.97** (pas planetit
+të dytë e tutje; pas hyrjes P_min është pothuajse i njëjtë për të gjitha drejtimet, ~134 ditë). Beam-i
 rendit sipas `ΔV + λ·(t + h)`, si funksioni `f = g + h` te A\*.
 
 **Krahasim i drejtë** (të njëjtat cilësime, B = 150, ~5 min):
@@ -102,7 +104,8 @@ bashkimit të të gjitha run-eve (1.27 milionë tura): **5,814,770**.
 dinamik (Bringmann et al., GECCO 2014). Në rastin tonë dhanë të njëjtin rezultat.
 
 ## Faza 3 – Eksperimente për vendin e parë (rezultat negativ)
-Lexuam prezantimin e ekipit fitues (Space Coders, workshop i ESA-s, 2022) dhe provuam idetë e tyre:
+Lexuam prezantimin e ekipit fitues (Space Coders, workshop i ESA-s, 2022) dhe provuam idetë e tyre,
+si dhe disa ide tonat:
 
 | Ideja | Rezultati | Shpjegimi |
 |---|---|---|
@@ -120,7 +123,8 @@ ynë e kishte gjetur vetë: e gjithë pjesa e frontit nën ~1790 ditë e përdor
 - **Rezultati final: 5,814,770** = 99.05% e rekordit të njohur (5,870,436), mbi vendin e 2-të.
 - Metoda konvergjon (kthime në rënie të qarta në run-et e gjata).
 - Turat pa karburant janë te ~1802–1806 ditë; kufiri fizik i kapjes (~133 ditë) e vendos minimumin
-  rreth ~1800 ditë. Vlera ~1773 ditë e fituesve vjen nga një model i thjeshtuar.
+  rreth ~1800 ditë. Vlera ~1773 ditë në prezantimin e fituesve është llogaritur, sipas tyre, në një
+  model të thjeshtuar të problemit.
 - Kufiri teorik global i problemit nuk dihet (problem jokonveks, pa vërtetim optimaliteti).
 
 ## Referenca

@@ -58,7 +58,7 @@ më dendur këmbët e mbetura.
 | Pjesa | Kompleksiteti | Koha reale |
 |---|---|---|
 | Vlerësimi i një ture | O(1) (7 Lambert + propagime) | ~20–40 µs |
-| Optimizimi i një këmbe | O(S · I), S fillime, I iteracione NM | ~10–50 ms |
+| Optimizimi i një këmbe | O(S · I), S fillime, I iteracione NM | ~4 ms për fillim |
 | Beam search | O(6 · B · (7−k) · S · I) | 15–40 min (B = 400–800, 4 bërthama) |
 | Heuristika | O(B · 576) fly-by për nivel | e papërfillshme |
 | Zgjedhja e 100 pikave | grykëse O(m² log m); e saktë O(n · m²) | sekonda |

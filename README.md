@@ -32,7 +32,7 @@ Dorëzimi: [`submission/best_submission.json`](submission/best_submission.json)
    Beam-i rendit sipas `ΔV + λ·(t + h)`. Me të njëjtat cilësime: 5.660M → 5.772M.
 4. **Dorëzimi:** verifikim zyrtar i çdo ture dhe zgjedhje optimale e 100 pikave me programim dinamik.
 
-Rrugëtimi i plotë nga 2.33M në 5.815M, me vlerat e çdo faze dhe eksperimentet që nuk funksionuan:
+Rrugëtimi i plotë nga fillimi deri në 5.815M, me vlerat e çdo faze dhe eksperimentet që nuk funksionuan:
 [`docs/PROCESI.md`](docs/PROCESI.md). Detajet e algoritmit dhe kompleksiteti:
 [`docs/METODA.md`](docs/METODA.md).
 

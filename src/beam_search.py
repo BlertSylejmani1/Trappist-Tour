@@ -1,7 +1,7 @@
 """Beam search kembe pas kembe, me heuristike per te ardhmen.
 
 Gjendja = (sekuenca e planeteve deri tani, koha t, shpejtesia e mberritjes, DV i grumbulluar,
-vektori i pjesshem i vendimeve). Nje ture ka 7 nivele: hyrja + 6 kemb.
+vektori i pjesshem i vendimeve). Nje ture ka 7 nivele: hyrja + 6 kembe.
 
 Cikli:
   1. Gjendjet fillestare: mijera drejtime hyrjeje (u, v), secila me T0 qe jep DV_init ~ 0.
