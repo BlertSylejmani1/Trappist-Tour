@@ -17,7 +17,7 @@ një anije hyn në sistemin TRAPPIST-1 dhe viziton të 7 planetët duke përdoru
 | **Ky projekt** | **5,814,770** (99.05% e rekordit) |
 | Vendi i 2-të i garës | ~5.73M |
 | Vendi i 3-të i garës | ~5.60M |
-| Pikënisja jonë (algoritme gjenetike) | ~2.4M |
+| Pikënisja jonë (algoritme evolucionare, faza 0) | 2.33M |
 
 Dorëzimi: [`submission/best_submission.json`](submission/best_submission.json)
 
@@ -32,7 +32,7 @@ Dorëzimi: [`submission/best_submission.json`](submission/best_submission.json)
    Beam-i rendit sipas `ΔV + λ·(t + h)`. Me të njëjtat cilësime: 5.660M → 5.772M.
 4. **Dorëzimi:** verifikim zyrtar i çdo ture dhe zgjedhje optimale e 100 pikave me programim dinamik.
 
-Rrugëtimi i plotë, me vlerat e çdo faze dhe eksperimentet që nuk funksionuan:
+Rrugëtimi i plotë nga 2.33M në 5.815M, me vlerat e çdo faze dhe eksperimentet që nuk funksionuan:
 [`docs/PROCESI.md`](docs/PROCESI.md). Detajet e algoritmit dhe kompleksiteti:
 [`docs/METODA.md`](docs/METODA.md).
 
