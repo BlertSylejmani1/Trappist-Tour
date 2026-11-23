@@ -1,0 +1,11 @@
+name: trappist
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pykep=2.6
+  - pygmo
+  - numpy
+  - scipy
+  - numba
+  - matplotlib

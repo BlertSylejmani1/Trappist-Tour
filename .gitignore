@@ -1,0 +1,7 @@
+__pycache__/
+*.pyc
+*.nbi
+*.nbc
+src/runs/
+src/log_search.txt
+src/best_found.json
